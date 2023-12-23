@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar Cadenas y Buscar Subcadenas</title>
+    <!-- Estilos opcionales para mejorar la apariencia del formulario -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(242, 244, 243)
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .cancelar{
+            border-radius: 5px;
+            background-color: #d23636;
+         
+        } 
+        .cancelar:hover {
+           
+            background-color: #3f0707;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #resp{
+           border-radius:15px;
+           background-color: antiquewhite;
+           padding: 20px;  
+           margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cancelar">Concatenar Cadenas y Buscar Subcadenas</h1>
+    <form>
+        <label for="cad1">Palabra:
+            <input type="text" id="cad1"  required>
+        </label>
+        <label for="cad2">Palabra:
+            <input type="text" id="cad2"  required>
+        </label>
+        <label for="buscar">SubCadena:
+            <input type="text" id="buscar" required>
+        </label>
+        <button type="button" onclick="tarea.concatenarBuscar()">Aceptar</button>
+        <button class="cancelar" type="reset">Limpiar</button>
+    </form>
+    <div id="resp">Aqui va la respuesta</div>
+<script src="../js/main.js">
+    
+</script>
+</body>
+</html>
